@@ -17,4 +17,4 @@ create table users (
 );
 
 
-INSERT INTO users (ide_number,firstname, email, password) VALUE ('18091418','GERALDINE','ESPINOSA','3175136251')   
+INSERT INTO users (ide_number,firstname, email, password) VALUE ('18091418','GERALDINE','ESPINOSA','3175136251') 
