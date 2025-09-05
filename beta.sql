@@ -21,3 +21,4 @@ INSERT INTO users (ide_number,firstname, email, password) VALUE ('18091418','SEB
 
 
 INSERT INTO users (ide_number,firstname, email, password) VALUE ('18091418','SS','Prado','3167227108');
+-- mindinero 
