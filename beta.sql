@@ -22,3 +22,63 @@ INSERT INTO users (ide_number,firstname, email, password) VALUE ('18091418','SEB
 
 INSERT INTO users (ide_number,firstname, email, password) VALUE ('18091418','SS','Prado','3167227108');
 -- mindinero 
+Table countries {
+id integer 
+name varchar
+code varchar 
+abrev varchar 
+  created_at timestamp
+  updated_at timestamp
+  deleted_at timestamp
+}
+
+Table users {
+  id integer [primary key]
+  id_city integer 
+  id_number varchar
+  fristname varchar
+  lastname varchar 
+  addres varchar 
+  mobile_number varchar
+  email varchar 
+  password verchar 
+  status boolean
+  created_at timestamp
+  updated_at timestamp
+  deleted_at timestamp
+}
+
+Table departments {
+ id integer [primary key]
+  id_country integer 
+  id_number varchar
+  fristname varchar
+  lastname p
+  addres varchar 
+  mobile_number varchar
+  email varchar 
+  password verchar 
+  status boolean
+  created_at timestamp
+  updated_at timestamp
+  deleted_at timestamp
+}
+Table cities {
+ id integer [primary key]
+  id_department integer 
+  id_number varchar
+  fristname varchar
+  lastname varchar 
+  addres varchar 
+  mobile_number varchar
+  email varchar 
+  password verchar 
+  status boolean
+  created_at timestamp
+  updated_at timestamp
+  deleted_at timestamp
+}
+
+Ref: users.id_city<cities.id
+Ref: cities.id_department<departments.id
+Ref: departments.id_country<countries.id
